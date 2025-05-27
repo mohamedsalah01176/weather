@@ -37,11 +37,11 @@ export default async function Section2({res}:props) {
   
   return ( 
     <div className='pb-5'>
-      <h1 className='text-3xl font-semibold'>Daily Weather Update</h1>
+      <h1 className='text-3xl font-semibold ml-[5%] mt-10 mb-4'>Daily Weather Update</h1>
 
-      <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-3 gap-3 '>
+      <div className='flex justify-center gap-7 items-center flex-wrap mt-3 container m-auto '>
         {dataUniq.map((item:any,index:number)=>
-          <div key={index} className='bg-[#2f4259]/90 flex flex-col gap-4 py-5 rounded-lg text-center'>
+          <div key={index} className='bg-[#2f4259]/60 w-[250px] flex flex-col gap-4 py-5 rounded-lg text-center transition-all duration-300 hover:scale-105 hover:-translate-y-2'>
           <div>
             <h1 className='font-bold'>
               {              getNumberData()[index] === 0?"Sunday": getNumberData()[index] === 1?"Monday":getNumberData()[index] === 2?"Tuesday":getNumberData()[index] === 3?"Wednesday":getNumberData()[index] === 4?"Thursday":getNumberData()[index] === 5?"Friday":"Sunday"}

@@ -31,15 +31,15 @@ export default function Section1({res,mode}:props) {
     let useName=cookies().get('userName')
     console.log(useName?.value)
   return (
-    <div className='mt-5'>
+    <div className='mt-5 container m-auto '>
         <div className={`flex justify-between items-center ${mode === 'Clear'?'text-black':"text-white"}`}>
-            <p className='text-2xl font-extralight'>Good morning, {useName?.value?useName?.value:"Any one"}</p>
+            <p className='text-2xl font-extralight'>Good morning, <span className="text-3xl font-semibold">{useName?.value?useName?.value:"Any one"}</span></p>
             <div>
                 <h1 className='text-2xl font-semibold'>{res.headers.date.slice(0,16)}</h1>
                 <p className='text-lg font-light'>{res.data.name}</p>
             </div>
         </div>
-            <div className={` ${mode === 'Clear'? "bg-[url('/214-2145531_sky-clouds-sun-blue-ftestickers-background-clipart.png')]": mode === 'Clouds'?"bg-[url('/R.png')]":"bg-[url('/closeup-shot-window-rainy-day-raindrops-rolling-down-window_181624-21644.avif')]"} bg-cover max-w-[600px] h-[350px] rounded-xl mx-auto mt-7 flex flex-col gap-10 justify-center items-center`}>
+            <div className={` hover:scale-105 hover:-translate-2 transition-all duration-300 ${mode === 'Clear'? "bg-[url('/214-2145531_sky-clouds-sun-blue-ftestickers-background-clipart.png')]": mode === 'Clouds'?"bg-[url('/R.png')]":"bg-[url('/closeup-shot-window-rainy-day-raindrops-rolling-down-window_181624-21644.avif')]"} bg-cover max-w-[600px] h-[350px] rounded-xl mx-auto mt-7 flex flex-col gap-10 justify-center items-center`}>
             <div className='flex items-start flex-row gap-7 mt-10 px-5 '>
                 <div className="flex items-end gap-7">
                     <div className='text-6xl sm:text-8xl font-bold text-[#ff9a03] relative'>{res.data.main.temp}
