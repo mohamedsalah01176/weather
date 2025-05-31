@@ -1,49 +1,33 @@
+# 🌤 Weather Web App
 
-A simple and fast weather application built with Next.js that shows you real-time weather info for any city.
+A **simple**, **fast**, and **responsive** weather app built with **Next.js** to get real-time weather updates anywhere in the world.
 
-Features
-Search weather by city name
+---
 
-Current temperature, humidity, wind speed, and condition
+## 🚀 Features
 
-Clean and responsive design
+- 🔍 Search weather by city name  
+- 🌡 Display current temperature, humidity, wind speed, and weather condition  
+- 📱 Responsive design for mobile and desktop  
+- ⚡ Fast rendering with Next.js SSR/SSG  
+- ⚠️ Error handling for invalid or missing data  
 
-Built with Next.js for great performance
+---
 
-Error handling for invalid inputs
+## 🛠 Tech Stack
 
-Tech Stack
-Next.js
+| Technology    | Purpose                 |
+| ------------- | ----------------------- |
+| Next.js       | React framework for SSR |
+| Weather API   | Real-time weather data  |
+| CSS/Tailwind  | Styling and layout      |
 
-Weather API (like OpenWeatherMap)
+---
 
-CSS / Tailwind CSS
+## ⚙️ Setup Instructions
 
-Setup
-Clone the repo:
+1. **Clone the repository**
 
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/yourusername/weather-web-app.git
 cd weather-web-app
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Add your API key in .env.local:
-
-ini
-Copy
-Edit
-NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
-Run the app locally:
-
-bash
-Copy
-Edit
-npm run dev
-Open http://localhost:3000 to see it live.
-
