@@ -1,25 +1,26 @@
+
+A simple and fast weather application built with Next.js that shows you real-time weather info for any city.
+
 Features
-Search weather by city name or location
+Search weather by city name
 
-Displays temperature, humidity, wind speed, and weather conditions
+Current temperature, humidity, wind speed, and condition
 
-Responsive design for all screen sizes
+Clean and responsive design
 
-Built with Next.js for fast performance and SEO benefits
+Built with Next.js for great performance
 
-Error handling for invalid locations or API issues
+Error handling for invalid inputs
 
-Technologies Used
-Next.js (React framework)
+Tech Stack
+Next.js
 
-OpenWeatherMap API (or specify your weather API)
+Weather API (like OpenWeatherMap)
 
-Tailwind CSS / CSS Modules (or your preferred styling)
+CSS / Tailwind CSS
 
-Axios / Fetch API for data fetching
-
-Getting Started
-Clone the repository:
+Setup
+Clone the repo:
 
 bash
 Copy
@@ -32,17 +33,17 @@ bash
 Copy
 Edit
 npm install
-# or
-yarn install
-Create a .env.local file and add your weather API key:
+Add your API key in .env.local:
 
-
-Run the development server:
+ini
+Copy
+Edit
+NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
+Run the app locally:
 
 bash
 Copy
 Edit
 npm run dev
-# or
-yarn dev
-Open http://localhost:3000 in your browser.
+Open http://localhost:3000 to see it live.
+
